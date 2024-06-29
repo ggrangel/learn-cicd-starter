@@ -18,7 +18,7 @@ jobs:
         with:
           go-versions: "1.22"
 
-      - name: Force Failure
+      - name: Run unit tests
         run: go test ./... -cover
 
   style:
@@ -34,5 +34,5 @@ jobs:
         with:
           go-versions: "1.22"
 
-      - name: Force Failure
+      - name: Run formatting
         run: test -z $(go fmt ./...)
