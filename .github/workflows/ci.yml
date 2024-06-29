@@ -43,5 +43,4 @@ jobs:
       - name: "Run linting with verbose logging"
         run: |
           staticcheck -debug.version
-          staticcheck -debug.checks
           staticcheck ./...
