@@ -24,7 +24,7 @@ func TestGetAPIKey(t *testing.T) {
 		{
 			input:   http.Header{"Authorization": {"NoApiKey"}},
 			wantStr: "",
-			wantErr: MalformedAuthHeader,
+			wantErr: ErrMalformedAuthHeader,
 		},
 	}
 
